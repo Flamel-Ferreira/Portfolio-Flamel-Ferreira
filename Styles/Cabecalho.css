@@ -1,0 +1,82 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+  --saturação-principal: #26979F;
+
+}
+
+/* box-shadown diferente de text-shadown */
+
+
+header{
+  background-color: var(--saturação-principal);
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 16px 60px;
+}
+
+.logo{
+  width:50%;
+}
+
+.circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:80px;
+  height:80px;
+  border: 3px solid white;
+  border-radius:50%;
+}
+
+.circle:hover{
+  background-color:#3EAEB6;
+  cursor: pointer;
+}
+
+.circle p{
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 30px;
+  letter-spacing: -0.9em;
+  position: relative;
+  left: 12%;
+  transition: letter-spacing, position 1s ;
+  transition: 1s ;
+}
+
+.circle:hover .texto-logo{
+  transition: 1s;
+  letter-spacing: 0em;
+  position: relative;
+  left: 0%;
+}
+
+.menu{
+  width:50%;
+}
+
+.menu-itens{
+  height: 50px;
+  align-items:center;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.menu-itens a{
+  text-decoration: none;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.menu-itens a:hover{
+  border-bottom: 3px solid white;
+  border-radius: 5px;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
