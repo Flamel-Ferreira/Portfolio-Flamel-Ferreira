@@ -4,14 +4,19 @@
   }
 }
 
-section.secao1{
+/* Transferir para geral */ 
+
+.secao1,.secao2{
   background: url(/assets/imgs/Fundo\ 1\ \(1\).svg);
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 60px 60px;
   justify-content: space-between;
+  width: 100%;
+  padding: 60px 120px;
+  height: 660px;
 }
+
+/* Transferir para geral */ 
 
 .secao1-texto{
   width:40%;
