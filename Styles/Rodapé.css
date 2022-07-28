@@ -1,0 +1,68 @@
+footer{
+  display: flex;
+  height: 100px;  
+  background-color: #26979F;
+  align-items: center;
+  padding: 0 120px
+}
+.rodape_texto{
+  width: 75%;
+}
+
+.rodape_icons{
+  width: 25%;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.linkedin{
+  margin-right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid #AFFAFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #AFFAFF;
+  font-family: 'Droid Sans';
+  font-weight: 700;
+  font-size: 35px;
+  transition: 0.5s ease-in;
+}
+
+.linkedin:hover{
+  color: #26979F;
+  border: 1px solid #ffffff00;
+  background-color: #AFFAFF;
+  box-shadow: inset -2px 4px 2px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transition: 0.5s ease-in;
+
+}
+
+.github{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid #AFFAFF;
+  background: url(/assets/imgs/Github-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.5s ease-in;
+
+}
+
+.github:hover{
+  background: url(/assets//imgs/Github-icon\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ffffff00;
+  background-color: #AFFAFF;
+  box-shadow: inset -2px 4px 2px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}

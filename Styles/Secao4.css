@@ -1,0 +1,78 @@
+.secao4{
+  background: url(/assets/imgs/Fundo\ 1\ \(1\).svg);
+  width: 100%;
+  padding: 60px 120px;
+
+}
+.projetos_texto{
+  text-align: center;
+}
+.projetos_boxes{
+  margin: 32px 0 32px 0;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 30px;
+  justify-content: space-around;
+
+}
+
+.projetos_boxes_single{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #8E8E8E;
+  text-align: center;
+  width: 320px;
+  height: 180px;
+}
+
+#box1{
+  background-image: url(/assets/imgs/BOTTLEA.png);
+  background-size: 320px 180px;
+}
+
+
+.projetos_boxes_single .em_progresso{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  background-color: #ACACAC;
+}
+
+.box_selecionada{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #3EAEB6;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.projetos_boxes_single:nth-child(1):hover .box_selecionada:nth-child(1){
+  opacity: 1;
+}
+
+/* Espaço para outros :hover de outros projetos */
+
+.em_progresso h3{
+  font-family: 'dosis', sans-serif;
+  color:white;
+}
+
+.bnt_ver_mais{
+  text-align: center;
+
+}
+
+.bnt_ver_mais p{
+  display: inline-block;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+}
