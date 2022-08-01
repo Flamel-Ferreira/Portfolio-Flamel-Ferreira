@@ -10,13 +10,9 @@
 /* box-shadown diferente de text-shadown */
 
 
-header{
-  background-color: var(--saturação-principal);
-  display: flex;
-  height: 100px;
-  align-items: center;
-  padding: 16px 120px;
-}
+
+
+
 
 .logo{
   width:50%;
