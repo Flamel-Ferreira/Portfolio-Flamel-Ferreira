@@ -1,24 +1,24 @@
 
 
 .secao3 h1{
-  color: white;
-  font-family: 'dosis',sans-serif;
-  font-size: 60px;
   text-align: center;
+  /* color: white;
+  font-family: 'dosis',sans-serif;
+  font-size: 60px; */
 }
 
 .boxes{
+  display:flex;
   background-color: white;
   border-radius:30px;
-  display:flex;
   margin-top: 32px;
 }
 
 .box-single{
-  width: 33.33%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 33.33%;
   padding: 16px;
   border: 2px solid #cecece;
 }
@@ -36,18 +36,15 @@
   max-width:150px;
   margin: 0 auto;
 }
-
+.habilidades h2{
+  text-align: center;
+}
+.box-single h2{
+  font-size: 38px;
+}
 .box-single h2, .box-single h3{
   margin-top: 16px;
-  color:#26979F;
-  font-family: 'dosis' ,sans-serif;
-}
+  color:#26979F !important;
+ 
+} 
 
-.box-single h2{
-  font-size: 32px;
-  font-weight: bold;
-}
-.box-single h3{
-  font-size: 32px;
-  font-weight: 400;
-}

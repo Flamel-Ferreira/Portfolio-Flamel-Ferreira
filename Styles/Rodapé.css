@@ -18,21 +18,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  color: #AFFAFF;
+
+  transition: 0.2s ease-in;
+}
+
+.linkedin p{
+  color: #AFFAFF ;
   font-family: 'Droid Sans',sans-serif;
   font-weight: 700;
   font-size: 35px;
   transition: 0.2s ease-in;
+
 }
 
+
 .linkedin:hover{
-  color: #26979F;
   border: 1px solid #ffffff00;
   background-color: #AFFAFF;
   box-shadow: inset -2px 4px 2px rgba(255, 255, 255, 0.5);
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.linkedin:hover p{
+  color: #26979F;
   transition: 0.2s ease-in;
 
 }
