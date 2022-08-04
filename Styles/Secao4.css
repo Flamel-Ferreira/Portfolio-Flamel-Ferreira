@@ -94,6 +94,13 @@
 
 .hidden{
   display:none;
+  transition: 1s;
+}
+
+.visible{
+  display: flex;
+  transition: 1s;
+  
 }
 
 .bnt_ver_mais{
@@ -119,6 +126,7 @@
   z-index: 2;
   color: white;
   transition: 0.3s ease-out;
+  transition-delay: 0.2s;
 
 }
 
@@ -126,6 +134,8 @@
   color: #3b3b3b;
   font-weight: bolder;
   transition: 0.3s ease-out;
+
+
 }
 
 .scale_in_center{
@@ -136,6 +146,8 @@
   border-radius: 50%;
   transition: 0.3s ease-in;
   background-color: white;
+  transition-delay: 0.2s;
+
 }
 
 .bnt_area:hover .scale_in_center{
@@ -143,4 +155,5 @@
   height: 200px;
   border-radius: 50%;
   transition: 0.3s ease-out;
+
 }
