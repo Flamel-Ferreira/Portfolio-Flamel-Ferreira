@@ -33,6 +33,7 @@
 
 
 .box-single img{
+  cursor: pointer;
   max-width:150px;
   margin: 0 auto;
 }
@@ -44,7 +45,7 @@
 }
 .box-single h2, .box-single h3{
   margin-top: 16px;
-  color:#26979F !important;
+  color:#26979F;
  
 } 
 
