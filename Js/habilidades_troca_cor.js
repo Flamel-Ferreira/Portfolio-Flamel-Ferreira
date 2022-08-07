@@ -12,20 +12,54 @@ for(let u = 0; u < hab_array.length; u++){
     var index = hab_array.findIndex(function(element){return element === t.target})
 
     if(index == 0){
-      t.target.setAttribute('src','/assets/imgs/HTML_2.svg');
-      hab_texto_array[0].style.color = '#F06529';
-      hab_texto_array[1].style.color = '#F06529';
+      if(hab_array[index].classList.contains('colorido')){
+        t.target.setAttribute('src','/assets/imgs/HTML.svg');
+        hab_texto_array[0].style.color = '#26979F';
+        hab_texto_array[1].style.color = '#26979F';
+
+        hab_array[index].classList.remove('colorido');
+
+      } else{
+        t.target.setAttribute('src','/assets/imgs/HTML_2.svg');
+        hab_texto_array[0].style.color = '#F06529';
+        hab_texto_array[1].style.color = '#F06529';
+
+        hab_array[index].classList.add('colorido');
+      }
+      
 
     }else if(index == 1){
-      t.target.setAttribute('src','/assets/imgs/CSS_2.svg');
-      hab_texto_array[2].style.color = '#264DE4';
-      hab_texto_array[3].style.color = '#264DE4';
+      if(hab_array[index].classList.contains('colorido')){
+        t.target.setAttribute('src','/assets/imgs/CSS.svg');
+        hab_texto_array[2].style.color = '#26979F';
+        hab_texto_array[3].style.color = '#26979F';
+
+        hab_array[index].classList.remove('colorido');
+      }else{
+        t.target.setAttribute('src','/assets/imgs/CSS_2.svg');
+        hab_texto_array[2].style.color = '#264DE4';
+        hab_texto_array[3].style.color = '#264DE4';
+
+        hab_array[index].classList.add('colorido');
+      }
 
 
     }else if(index == 2){
-      t.target.setAttribute('src','/assets/imgs/JavaScript_2.svg');
-      hab_texto_array[4].style.color = '#FFC928';
-      hab_texto_array[5].style.color = '#FFC928';
+
+      if(hab_array[index].classList.contains('colorido')){
+        t.target.setAttribute('src','/assets/imgs/JavaScript.svg');
+        hab_texto_array[4].style.color = '#26979F';
+        hab_texto_array[5].style.color = '#26979F';
+
+        hab_array[index].classList.remove('colorido');
+      }else{
+        t.target.setAttribute('src','/assets/imgs/JavaScript_2.svg');
+        hab_texto_array[4].style.color = '#FFC928';
+        hab_texto_array[5].style.color = '#FFC928';
+
+        hab_array[index].classList.add('colorido');
+      }
+
 
     }      
 
