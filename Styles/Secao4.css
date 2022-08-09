@@ -101,6 +101,10 @@
   transition: 1s;
 }
 
+.inline{
+  display: inline;
+}
+
 .visible{
   display: flex;
   transition: 1s;

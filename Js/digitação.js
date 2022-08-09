@@ -1,6 +1,6 @@
-var spanSobrenome = document.querySelector('.secao1-texto h1 > span');
-var sobreNome = spanSobrenome.innerHTML;
-var indexCaract = 0
+var sobrenome = document.querySelector('.secao1-texto h1 > span');
+const sobreNomeHTML = sobrenome.innerHTML;
+var tamanho = 0
 
 const flamel_bnt = document.querySelector('.secao1-texto h1')
 
@@ -11,77 +11,48 @@ const flamel_bnt = document.querySelector('.secao1-texto h1')
 // Sintaxe da substring
 // String.substring(inicio,tamanho)
 
-var ind = 1;
+const escrever = function(){
+  sobrenome.innerHTML = sobrenome.innerHTML.replace('|','');
 
-const escrever2 = function(){
-  sobreNome = sobreNome.replace('|','')
+  sobrenome.innerHTML = sobreNomeHTML.substring(0,tamanho);
 
-  sobreNome.substring(1,ind);
+  sobrenome.innerHTML += '|';
 
-  sobreNome += '|';
-
-  if(ind < sobreNome.length){  
-    console.log(ind)
-    ind++
-    setTimeout(escrever2, 1000)
+  if(tamanho < sobreNomeHTML.length){
+    tamanho++;
+    setTimeout(escrever,100);
+  } else {
+    sobrenome.innerHTML = sobrenome.innerHTML.replace('|','');
   }
 }
-
-
-{
-const escrever = function (){
-  spanSobrenome.innerHTML = spanSobrenome.innerHTML.replace('|','')
-
-  if (sobreNome.length > indexCaract ){
-    if(indexCaract == 0){
-      spanSobrenome.innerHTML = sobreNome.charAt(indexCaract);
-    }else{
-      spanSobrenome.innerHTML += sobreNome.charAt(indexCaract);
-    }
-
-    spanSobrenome.innerHTML += '|'
-
-    indexCaract++
-    setTimeout(escrever, 50)
-  }
-
-  alert(indexCaract);
-}
-
-
 
 const apagar = function(){
-  spanSobrenome.innerHTML = spanSobrenome.innerHTML.replace('|','')
+  sobrenome.innerHTML = sobrenome.innerHTML.replace('|','');
 
-  indexCaract--
- 
-  if (sobreNome.length > indexCaract ){
-    if(indexCaract == 0){
-      spanSobrenome.innerHTML = sobreNome.charAt(indexCaract);
-    }else{
-      spanSobrenome.innerHTML -= sobreNome.charAt(indexCaract);
-    }
+  sobrenome.innerHTML = sobreNomeHTML.substring(0,tamanho);
 
-    spanSobrenome.innerHTML += '|'
+  sobrenome.innerHTML += '|';
 
-    if (indexCaract == 0){
-      return
-    }
-    setTimeout(apagar, 1000)
+  if(tamanho > 0){
+    tamanho--;
+    setTimeout(apagar,100);
+  } else {
+    sobrenome.innerHTML = sobrenome.innerHTML.replace('|','');
+  }
 
-  } 
-  console.log(indexCaract)
+  if(tamanho==0){
+    sobrenome.classList.remove('inline')
+    sobrenome.classList.add('hidden');
+  }
 }
 
 flamel_bnt.addEventListener('click',()=>{
-  if(spanSobrenome.style.display == 'inline'){
-    alert('chamando apagar')
-    apagar();
-    // spanSobrenome.style.display = 'none'
+  if(sobrenome.classList.contains('hidden')){
+    sobrenome.classList.remove('hidden')
+    sobrenome.classList.add('inline')
+
+    escrever();
   }else{
-    alert('Chamando escrever')
-    spanSobrenome.style.display = 'inline'
-    escrever2();
+    apagar();
   }
 })
-}
