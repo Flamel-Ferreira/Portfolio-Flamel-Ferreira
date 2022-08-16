@@ -21,5 +21,12 @@
     width: 100%;
   }
 
-  
+
+  /* SEÇÃO 4 */
+
+  .projetos_boxes{
+    grid-template-columns: auto auto;
+  } 
+
+ 
 }
