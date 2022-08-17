@@ -3,6 +3,17 @@
 .projetos_texto{
   text-align: center;
 }
+
+.projetos_texto a{
+  color:rgb(42, 59, 190);
+  font-weight: 600;
+}
+
+.projetos_texto a:hover{
+  border-bottom: 3px solid rgb(42, 59, 190);
+  border-radius: 2px;
+}
+
 .projetos_boxes{
   width: 100%;
   margin: 32px 0 32px 0;
