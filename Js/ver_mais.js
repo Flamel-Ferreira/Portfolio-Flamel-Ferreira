@@ -8,7 +8,7 @@ console.log(bnt_ver);
 
 bnt_ver.addEventListener("click",function(){
   
-  for(var i = 3; i< boxes_sec4.length; i++){
+  for(var i = 0; i< boxes_sec4.length; i++){
     
     if(boxes_sec4[i].classList.contains("hidden")){
       boxes_sec4[i].classList.remove("hidden");
@@ -29,7 +29,4 @@ bnt_ver.addEventListener("click",function(){
       area_botao.style.width = 200;
     }
   }
-
-  
- // ver uma forma de selecionar os que ter class hidden e tirar para quando for ver menos não esconder todos.
 })
