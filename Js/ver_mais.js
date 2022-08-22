@@ -1,10 +1,7 @@
 var bnt_ver = document.querySelector(".bnt_area");
-var escondido = document.querySelectorAll(".hidden");
 var boxes_sec4 = document.querySelectorAll(".projetos_boxes_single")
 var ver_mais = document.querySelector(".bnt_area p")
 let area_botao = document.querySelector(".bnt_area")
-
-console.log(bnt_ver);
 
 bnt_ver.addEventListener("click",function(){
   
