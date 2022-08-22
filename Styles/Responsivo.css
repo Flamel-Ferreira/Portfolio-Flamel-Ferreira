@@ -8,7 +8,6 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    
   }
 
   /* SEÇÃO 1 */
@@ -21,12 +20,38 @@
     width: 100%;
   }
 
-
   /* SEÇÃO 4 */
 
   .projetos_boxes{
     grid-template-columns: auto auto;
   } 
+}
 
+@media screen and (max-width: 766px){
+  /* GERAL */
+  .centralizador{
+    max-width: 500px;
+  }
+
+  /* SEÇÃO 4 */
+
+  .projetos_boxes{
+    grid-template-columns: auto;
+  } 
+
+  /* RODAPÉ */
+  .rodape .ajustador1{
+    flex-direction:column;
+    justify-content: center;
+    gap:10px;
+  }
+
+  .rodape{
+    height: 150px;
+  }
+
+  .rodape_texto{
+    text-align: center;
+  }
  
 }
