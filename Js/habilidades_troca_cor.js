@@ -4,8 +4,6 @@ var hab_array = Array.from(habilidades_imgs_NodeList);
 const hab_texto = document.querySelectorAll('.box-single h2, .box-single h3');
 var hab_texto_array = Array.from(hab_texto);
 
-
-console.log(hab_texto)
 for(let u = 0; u < hab_array.length; u++){
   hab_array[u].addEventListener("click",(t)=>{
         
