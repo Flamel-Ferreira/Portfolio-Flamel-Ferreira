@@ -30,7 +30,18 @@
 @media screen and (max-width: 766px){
   /* GERAL */
   .centralizador{
-    max-width: 500px;
+    max-width: 400px;
+  }
+
+  .secao1-imagem{
+    width: 70%;
+    display:flex;
+    justify-content: center;
+  }
+  .secao1-imagem .image{
+    max-width: 350px;
+    height: 350px;
+    background-size: 100%;
   }
 
   /* SEÇÃO 4 */
