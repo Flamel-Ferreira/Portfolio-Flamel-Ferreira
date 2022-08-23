@@ -60,7 +60,7 @@
   color: white;
   font-family: "Dosis", sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: clamp(20px, 2.75vw,25px);
 }
 
 .menu-itens a:hover{

@@ -41,7 +41,7 @@
   text-align: center;
 }
 .box-single h2{
-  font-size: 38px;
+  font-size: clamp(30px,3vw,38px);
 }
 .box-single h2, .box-single h3{
   margin-top: 16px;
