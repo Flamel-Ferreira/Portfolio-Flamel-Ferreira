@@ -51,8 +51,12 @@ flamel_bnt.addEventListener('click',()=>{
     sobrenome.classList.remove('hidden')
     sobrenome.classList.add('inline')
 
-    escrever();
+    if(tamanho==0){
+      escrever();
+    }  
   }else{
-    apagar();
+    if(tamanho==7){
+      apagar();
+    }
   }
 })
