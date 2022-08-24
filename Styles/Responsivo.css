@@ -61,6 +61,10 @@
     height: 150px;
   }
 
+  .rodape_icons{
+    width:100%;
+    justify-content: center;
+  }
   .rodape_texto{
     text-align: center;
   }
