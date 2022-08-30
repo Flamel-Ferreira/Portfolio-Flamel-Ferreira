@@ -43,7 +43,18 @@
     height: 350px;
     background-size: 100%;
   }
+  /* CABEÇALHO*/
+  
+  .circle{
+    width:70px;
+    height:70px;
+  }
 
+  .circle p{
+    font-size: 26px;
+    letter-spacing: -0.9em;
+  }
+  
   /* SEÇÃO 4 */
 
   .projetos_boxes{
@@ -68,5 +79,31 @@
   .rodape_texto{
     text-align: center;
   }
- 
+
+ /* RODAPÉ */
+
+ .linkedin{
+    width: 50px;
+    height: 50px;
+  }
+
+  .linkedin p{
+    font-size: 30px;
+    transition: 0.2s ease-in;
+  }
+
+  .github{
+    width: 50px;
+    height: 50px;
+    background: url(/assets/imgs/Github-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    transition: 0.2s ease-in;
+  }
+
+  .github:hover{
+    background-size: 60%;
+
+  }
 }
