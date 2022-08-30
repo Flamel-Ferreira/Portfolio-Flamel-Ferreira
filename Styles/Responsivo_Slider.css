@@ -1,0 +1,121 @@
+.slides input{
+  display: none;
+}
+
+
+@media screen and (max-width: 1150px){
+  .slides input{
+    display: none;
+  }
+  
+  .slider{
+    width:700px; /* substituir pelo tamanho do ajustador*/ 
+    overflow: hidden;
+  }
+  
+  .slides{
+    display:flex;
+    width:300%;
+    height: 100%;
+  }
+  
+  .slide-single{
+    height: 400px;
+    width:33.33%;
+    position: relative;
+    transition: 2s ease-in-out;
+  }
+  
+  .manual-navigation{
+    position: relative;
+    width: 700px; /* substituir pelo tamanho do ajustador*/
+    margin-top:-60px;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn{
+    border: 2px solid #26979F;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  
+  .manual-btn:hover{
+    background-color: #26979F;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -33.33%;
+  }
+  #radio3:checked ~ .first{
+    margin-left: -66.66%;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color:#26979F;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color:#26979F;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color:#26979F;
+  }
+  
+  .navigation-auto{
+    position:absolute;
+    width: 700px;
+    margin-top:357px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+  } 
+  
+  .navigation-auto div{
+    
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 34px; 
+  }
+  
+}
+
+@media screen and (max-width: 766px){
+
+  .slider{
+    width:400px; /* substituir pelo tamanho do ajustador*/ 
+    overflow: hidden;
+  }
+  
+  .slide-single{
+    height: 420px;
+  }
+  
+  .manual-navigation{
+    width: 400px; /* substituir pelo tamanho do ajustador*/
+    margin-top:-60px;
+  }
+
+  .navigation-auto{
+    width: 400px;
+    margin-top:377px;
+  } 
+}

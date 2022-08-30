@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/Styles/secao4.css">
     <link rel="stylesheet" href="/Styles/Rodapé.css">
     <link rel="stylesheet" href="/Styles/Responsivo.css">
+    <link rel="stylesheet" href="/Styles/Responsivo_Slider.css">
     <!-- :Links CSS -->
 
     <title>Portfólio Flamel Ferreira</title>
@@ -100,54 +101,73 @@
     <section class="secao3" id="habilidades">
       <div class="centralizador">
         <div class="ajustador2">
+
+          <h2>Habilidades</h2>
           
-          <div class="habilidades">
+          <div class="slider">
+            
+              <div class="boxes slides">
+                <input type="radio" name="radio-bnt" id="radio1">
+                <input type="radio" name="radio-bnt" id="radio2">
+                <input type="radio" name="radio-bnt" id="radio3">
 
-              <h2>Habilidades</h2>
-
-              <div class="boxes">
-                <div class="box-single">
+                <div class="box-single slide-single first">
                   <img src="/assets/imgs/HTML.svg" alt="">
                   <h2>HTML 5</h2>
                   <h3>HTML é uma linguagem de marcação. Funciona como um esqueleto para a criação de páginas Web.</h3>
+                  <br>
                 </div>
 
-                <div class="box-single">
+                <div class="box-single slide-single">
                   <img src="/assets/imgs/CSS.svg" alt="">
                   <h2>CSS 3</h2>
                   <h3>CSS é uma linguagem de estilização. É literalmente a aparencia da página Web.</h3>
+                  <br>
                 </div>
 
-                <div class="box-single">
+                <div class="box-single slide-single">
                   <img src="/assets/imgs/JavaScript.svg" alt="">
                   <h2>JavaScript</h2>
                   <h3>JavaScript é uma das linguagens de programação mais usada na criação de páginas Web. Ele funciona como o sistema nervoso da página web.</h3>
+                  <br>
                 </div>
                 
                 <!--  FUTURAS HABILIDADES: 
 
-                  <div class="box-single">
+                  <div class="box-single slide-single">
                   <img src="/assets/imgs/JavaScript.svg" alt="">
                   <h2>SASS</h2>
                   <h3>Descrição</h3>
                 </div>
 
-                <div class="box-single">
+                <div class="box-single slide-single">
                   <img src="/assets/imgs/JavaScript.svg" alt="">
                   <h2>jQuery</h2>
                   <h3>Descrição</h3>
                 </div>
 
-                <div class="box-single">
+                <div class="box-single slide-single">
                   <img src="/assets/imgs/JavaScript.svg" alt="">
                   <h2>React</h2>
                   <h3>Descrição</h3>
                 </div>
               -->
 
-
-              </div><!--boxes-->
-          </div><!--habilidades-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+              
+            </div><!--boxes slide-single-->
+          </div><!--slider-->
+          
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+          
 
         </div><!--ajustador2-->
       </div><!--centralizador-->
