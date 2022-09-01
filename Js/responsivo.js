@@ -11,6 +11,8 @@ function auto_hidden(){
     reset_hidden();
     for(let a = 3; a < boxes_sec4.length; a++){
       boxes_sec4[a].classList.add('hidden');
+      allow = 'true'
+      reset_all_colors();
       // Deixar apenas 3 paineis quando maior que 1150px
     }
   }
@@ -19,6 +21,9 @@ function auto_hidden(){
     reset_hidden();
     for(let b = 2; b < boxes_sec4.length; b++){
       boxes_sec4[b].classList.add('hidden');
+      allow = 'false'
+      reset_all_colors();
+
     }// Deixar apenas dois paineis quando entre 766px e 1150px
   }
 
@@ -27,7 +32,9 @@ function auto_hidden(){
     reset_hidden();
     for(let c = 1; c < boxes_sec4.length; c++){
       boxes_sec4[c].classList.add('hidden');
-    } // Deixar apenas dois paineis quando menor 766px  
+      allow = 'false'
+      reset_all_colors();
+    } // Deixar apenas dois paineis quando menor 766px
   }
 }
 
