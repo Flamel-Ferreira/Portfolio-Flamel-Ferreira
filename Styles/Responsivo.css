@@ -61,6 +61,11 @@
     grid-template-columns: auto;
   } 
 
+  .bnt_ver_mais .bnt_area{
+    width: 125px;
+    height: 40px;
+  }
+
   /* RODAPÉ */
   .rodape .ajustador1{
     flex-direction:column;
@@ -80,7 +85,7 @@
     text-align: center;
   }
 
- /* RODAPÉ */
+ /* RODAPÉ ICONES */
 
  .linkedin{
     width: 50px;
