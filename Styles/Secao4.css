@@ -5,13 +5,13 @@
 }
 
 .projetos_texto a{
-  color:rgb(42, 59, 190);
+  color:#3EAEB6;
   text-shadow: 0px 1px 0px rgb(33, 27, 66);
   font-weight: 600;
 }
 
 .projetos_texto a:hover{
-  border-bottom: 3px solid rgb(42, 59, 190);
+  border-bottom: 3px solid #3EAEB6;
   border-radius: 2px;
 }
 

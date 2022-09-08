@@ -3,6 +3,12 @@
     transform: translateY(-20px);
   }
 }
+.secao1::before{
+  content:"";
+  display: block;
+  width: 100%;
+  height:100px;
+}
 
 .secao1-texto{
   width:40%;

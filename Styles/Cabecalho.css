@@ -6,6 +6,11 @@
   --saturação-principal: #26979F;
 }
 
+header{
+  position: fixed;
+  width: 100%;
+  z-index:10;
+}
 .menu label, #input_menu_responsivo{
   display: none;
 }
