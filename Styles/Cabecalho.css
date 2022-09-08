@@ -6,6 +6,11 @@
   --saturação-principal: #26979F;
 }
 
+.menu label, #input_menu_responsivo{
+  display: none;
+}
+
+
 .logo{
   width:50%;
 }
@@ -44,15 +49,19 @@
 }
 
 .menu{
+  display: flex;
+  justify-content: end;
   width:50%;
+  
 }
 
 .menu-itens{
-  height: 50px;
-  align-items:center;
   display: flex;
+  align-items:center;
   justify-content: space-around;
   vertical-align: middle;
+  height: 50px;
+  width: 100%;
 }
 
 .menu-itens a{
