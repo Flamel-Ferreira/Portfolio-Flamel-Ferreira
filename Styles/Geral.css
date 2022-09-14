@@ -4,6 +4,8 @@
   box-sizing: border-box;
   color: white;
   font-family: 'Dosis',sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
 }
 
 h1{
