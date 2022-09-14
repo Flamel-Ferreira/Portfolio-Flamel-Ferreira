@@ -18,7 +18,6 @@ for(let u = 0; u < hab_img_array.length; u++){
         colorir_HTML();
       }
       
-
     }else if(index == 1 && allow == 'true'){ // Segundo elemento
       if(hab_img_array[index].classList.contains('colorido')){
         reset_cor_CSS();
@@ -32,10 +31,14 @@ for(let u = 0; u < hab_img_array.length; u++){
       }else{
         colorir_javascript();
       }
-    }      
+    }   
+    
+    // FUTURAS HABILIDADES
+
   })
 }
 
+// HTML
 function reset_cor_HTML(){
   hab_img_array[0].setAttribute('src','/assets/imgs/HTML.svg');
   hab_texto_array[0].style.color = '#26979F';
@@ -50,6 +53,9 @@ function colorir_HTML(){
   
   hab_img_array[0].classList.add('colorido');
 }
+// HTML
+
+// CSS
 function reset_cor_CSS(){
   hab_img_array[1].setAttribute('src','/assets/imgs/CSS.svg');
   hab_texto_array[2].style.color = '#26979F';
@@ -64,6 +70,9 @@ function colorir_CSS(){
   
   hab_img_array[1].classList.add('colorido');
 }
+// CSS
+
+// JAVASCRIPT
 function reset_cor_javascript(){
   hab_img_array[2].setAttribute('src','/assets/imgs/JavaScript.svg');
   hab_texto_array[4].style.color = '#26979F';
@@ -78,6 +87,8 @@ function colorir_javascript(){
   
   hab_img_array[2].classList.add('colorido');
 }
+// JAVASCRIPT
+
 
 function reset_all_colors(){
   reset_cor_HTML();
