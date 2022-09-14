@@ -2,7 +2,7 @@
 // .matches → Irá testa o .matchMedia(string) retornando um true se for cumprida e false se não 
 document.addEventListener('DOMContentLoaded', auto_hidden); // Chama quando inicia
 window.addEventListener('resize', auto_hidden); // Chama quando da resize
-// Essa função não é muito perfomática pois chama várias vezes quando está arrastando a tela para dar resize
+// Essa função não é muito performática pois chama várias vezes quando está arrastando a tela para dar resize
 
 
 function auto_hidden(){
@@ -13,7 +13,7 @@ function auto_hidden(){
       boxes_sec4[a].classList.add('hidden');
       allow = 'true'
       reset_all_colors();
-      // Deixar apenas 3 paineis quando maior que 1150px
+      // Deixar apenas 3 painéis quando maior que 1150px
     }
   }
 
@@ -24,7 +24,7 @@ function auto_hidden(){
       allow = 'false'
       reset_all_colors();
 
-    }// Deixar apenas dois paineis quando entre 766px e 1150px
+    }// Deixar apenas dois painéis quando entre 766px e 1150px
   }
 
 
@@ -34,7 +34,7 @@ function auto_hidden(){
       boxes_sec4[c].classList.add('hidden');
       allow = 'false'
       reset_all_colors();
-    } // Deixar apenas dois paineis quando menor 766px
+    } // Deixar apenas dois painéis quando menor 766px
   }
 }
 
