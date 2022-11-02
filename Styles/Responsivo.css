@@ -25,11 +25,16 @@
   .projetos_boxes{
     grid-template-columns: auto auto;
   } 
+
+  
 }
 
 @media screen and (max-width: 766px){
   /* CABEÇALHO */
 
+  .logo,.menu{
+    width:40%;
+  }
 
   .menu label{
     display: flex;
@@ -42,9 +47,11 @@
     background-color: white;
     cursor:pointer;
   }
+
   .menu label:hover{
     background-color: #c7f3ff;
   }
+
   .menu label div{
     position: absolute;
     width: 35px;
@@ -56,8 +63,8 @@
 
   .menu label div:nth-child(1){
     translate: 0 -12px;
-  
   }
+
   .menu label div:nth-child(3){
     translate: 0 12px;
   }
@@ -191,4 +198,14 @@
     background-size: 60%;
 
   }
+}
+
+@media screen and (max-width: 400px){
+  /* GERAL  */
+   body{
+    width:400px;
+  }
+  
+
+  
 }
