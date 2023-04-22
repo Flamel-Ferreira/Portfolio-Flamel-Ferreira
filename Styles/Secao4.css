@@ -41,6 +41,11 @@
   background-size: 320px 180px;
 }
 
+#box2{
+  background-image: url(/assets/imgs/Background_Projetos/PXVerse.png);
+  background-size: 320px 180px;
+}
+
 
 .projetos_boxes_single .em_progresso{
   display: flex;
